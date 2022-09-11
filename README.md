@@ -1,10 +1,7 @@
 # PC-GNN
 
-This is the author implementation of "[Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3442381.3449989)" (WebConf 2021).
+This is the improved version of author implementation of "[Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3442381.3449989)" (WebConf 2021).
 
-Slides and video can be found [here](https://ponderly.github.io/).
-
-[Yang Liu](https://ponderly.github.io/), [Xiang Ao](https://aoxaustin.github.io/), Zidi Qin, Jianfeng Chi, Jinghua Feng, Hao Yang and [Qing He](http://people.ucas.ac.cn/~heqing?language=en). 
 
 ## Requirements
 
@@ -19,13 +16,10 @@ torch             1.4.0
 
 ## Dataset
 
-YelpChi and Amazon can be downloaded from [here](https://github.com/YingtongDou/CARE-GNN/tree/master/data) or [dgl.data.FraudDataset](https://docs.dgl.ai/api/python/dgl.data.html#fraud-dataset).
-
-Put them in `/data` directory and run `unzip /data/Amazon.zip` and `unzip /data/YelpChi.zip` to unzip the datasets.
+YelpChi can be unzipped in the file "data".
 
 Run `python src/data_process.py` to pre-process the data.
 
-Kindly note that there may be two versions of node features for YelpChi. The old version has a dimension of 100 and the new version is 32. In our paper, the results are reported based on the old features.
 
 ## Usage
 
@@ -44,7 +38,3 @@ python main.py --config ./config/pcgnn_yelpchi.yml
   year={2021}
 }
 ```
-
-## Other implementations
-
-Thanks for [Jack Huang](https://github.com/f26401004/PC-GNN) and [Ronald D. R. Pereira](https://github.com/ronaldpereira/pick-and-choose-gnn) for their kind implementations.
