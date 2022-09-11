@@ -1,7 +1,8 @@
-# PC-GNN
+# PC-GAT
 
-This is the improved version of author implementation of "[Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3442381.3449989)" (WebConf 2021).
+This is the improved model structure of the author implementation of "[Pick and Choose: A GNN-based Imbalanced Learning Approach for Fraud Detection](https://dl.acm.org/doi/abs/10.1145/3442381.3449989)" (WebConf 2021).
 
+I replaced GCN aggregation in PC-GAT model with attention mechanism.
 
 ## Requirements
 
